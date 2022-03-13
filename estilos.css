@@ -1,0 +1,33 @@
+body{background-color:black;
+font-family:arial;
+font-size: 2em;
+font-wight: normal;
+text-indent:30px;
+text-align: center;}
+
+*{height 100%;}
+
+h1{color:white;
+background-color:#1538ff;
+font-size:65px;
+text-shadow:5px 5px 5px #000000;}
+
+h2{color:white;
+background-color:#5582ff;
+text-align: left;}
+
+h3{color:white;
+text-align:left;}
+
+p{color:white; 
+text-align: justify;
+margin-right:60px;
+margin-left:60px;}
+
+ul{color:white;
+text-align: left;}
+
+footer{border:3px solid white;
+border-radius:30px;
+background-color:#848484;
+height:400px;}
