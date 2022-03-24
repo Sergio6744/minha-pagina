@@ -1,61 +1,70 @@
-@font-face{
-font-family:'press';
-src: url('Redressed-Regular.ttf') 
-format('truetype');}
-
-body{text-align:center;}
-
-header{height:350px;
-color:#ff8800;
-font-family:press;
-font-size:5em;
-background-color:#00eaff;
-text-align:cenetr;
-margin:-108px -8px 0px -8px;}
-
-h1{padding-top:20px;}
-
-h2{font-family:sans-serif;
-font-size:3em;
-text-align:left;
-color:#c96b00;}
-
-h3{font-size:2em;}
-
-ul{font-size:2em;}
-
-p{font-family:sans-serif;
-font-size:2em;
-text-align:justify;}
-
-article{max-width:1000px;
-min-width:360px;
-width:750px;
+@font-face{font-family:kalam;
+				src:url('Kalam-Regular.ttf')
+				format('truetype');}
+				
+main{font-family:sans-serif;
 margin:auto;
-margin-top:140px;}
+max-width:1000px;}
 
-.art1 > img{border-radius:30px;}
-
-.par1{margin-top:100px;}
-
-img{width:60%;
-border-radius:20px;}
-
-footer{background-color:#0e9fa6;
-height:500px;
-margin:170px -8px -8px -8px;
-text-align:left;
-padding-top:40px;
-padding-left:110px;
-color:white;}
-
-footer > p{color:white;
-text-align:right;}
-
-a{color:white;
-text-decoration:underline;}
-
-header > p {font-size:1em;
-color:#ff8800;
+header{color:white;
 text-align:center;
-margin-top:-140px;}
+font-size:6vw;
+margin:-66px -8px 0px -8px;
+height:25vh;
+background-color:black;
+background-image:url('img3.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+padding-top:15%;
+position:relative;}
+
+h1{font-family:kalam;}
+
+header > p{position:absolute;
+top:53%;
+left:25%;
+font-family:sans-serif;}
+
+nav{font-size:4vw;
+text-align:center;
+padding:40px;}
+
+article{font-size:4vw;
+padding:20vh 30px 20vh 30px;
+line-height:60px;}
+
+#art1{height:18vh;
+position:relative;}
+
+#art2{color:white;
+bacground-color:white;
+background-image:url('imagem2.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+background-position:center center;
+margin-right:-8px;
+margin-left:-8px;}
+
+#minhaft{width:31vw;
+position:absolute;
+top:25%;
+left:5%;}
+
+#p1{font-size:4vw;
+max-width:1000px;
+position:absolute;
+top:26%;
+left:40%;}
+
+footer{text-align:center;
+font-size:3vw;
+background-color:#9d9d9d;
+margin: 0px -8px -66px -8px;
+padding:50px;}
+
+#versão{text-align:right;}
+
+a{color:black;
+text-decoration: none;
+font-weight:bold;}
