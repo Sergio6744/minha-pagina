@@ -1,0 +1,21 @@
+function btescuro(){							
+var bt = document.getElementById('botao')
+							var fundo = document.getElementById('fundo')
+							var p1 = document.getElementById('p1')
+							var tcss = document.getElementById('tcss')
+							var pcss = document.getElementById('pcss')
+							var art4 =document.getElementById('art4')
+							var t4 = document.getElementById('t4')
+							var p4 = document.getElementById('p4')
+							var phtml = document.getElementById('phtml')
+							var thtml = document.getElementById('thtml')
+							
+fundo.style.background=('#3c3c3c')
+p1.style.color=('#aeaeae')
+tcss.style.color=('#aeaeae')
+pcss.style.color=('#aeaeae')
+art4.style.background=('#002d84')
+t4.style.color=('#aeaeae')
+p4.style.color=('#aeaeae')
+phtml.style.color=('#aeaeae')
+thtml.style.color=('#aeaeae')}
