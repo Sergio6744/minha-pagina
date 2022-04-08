@@ -1,10 +1,10 @@
 @font-face{font-family:kalam;
 				src:url('Kalam-Regular.ttf')
 				format('truetype');}
+
 				
 main{font-family:sans-serif;
-margin:auto;
-max-width:1000px;}
+margin:auto;}
 
 header{color:white;
 text-align:center;
@@ -16,9 +16,9 @@ background-color:black;
 background-image:url('img3.jpg');
 background-repeat:no-repeat;
 background-size:cover;
-padding:100px;}
+padding:100px 150px 100px 150px;}
 
-nav > p{font-size:2em;
+nav > p{font-size:2.2em;
 background-color:#5b5b5b;
 color:white;
 height:100px;
@@ -36,10 +36,8 @@ padding:15vh 30px 15vh 30px;
 line-height:60px;
 max-height:96vh;}
 
-img{border-radius:20px;}
-
 #art1{display: flex;
-align-items: center;}
+align-items:center;}
 
 #art2{color:white;
 bacground-color:white;
@@ -55,7 +53,8 @@ margin-left:-8px;}
 margin-right:-8px;
 margin-left:-8px;}
 
-#minhaft{height:40vw;}
+#minhaft{height:40vw;
+border-radius:20px;}
 
 #p1{margin-left:25px;}
 
@@ -68,6 +67,26 @@ padding:50px;}
 
 #versão{text-align:right;}
 
-a{color:black;
+a{colorblack;
 text-decoration: none;
 font-weight:bold;}
+
+@media (min-width:990px), (orientation:landscape) {
+     header{max-height:76vh;
+     font-size:2.5em;
+     line-height:76vh;}
+
+				article{font-size:1em;
+				min-height:76vh;
+				line-height:30px;
+				padding:100px 20vw 100px 20vw;}
+				
+				footer{font-size:0.8em;}
+				
+				nav > p{font-size:1em;
+				height:50px;
+				width:150px;
+				line-height:50px;}
+				
+				#minhaft{height:80vh;}
+}
