@@ -1,22 +1,21 @@
-@font-face{font-family:kalam;
-				src:url('Kalam-Regular.ttf')
-				format('truetype');}
+h1, h2, p, img{animation-name:iniciar;
+animation-duration:0.3s;}
 
-				
 main{font-family:sans-serif;
 margin:auto;}
 
 header{color:white;
-text-align:center;
 font-size:6vw;
-margin:-66px -8px 0px -8px;
-min-height:20vh;
-max-height:96vh;
+font-family:kalam;
+margin:-8px -8px 0px -8px;
+height:30vh;
 background-color:black;
 background-image:url('img3.jpg');
 background-repeat:no-repeat;
 background-size:cover;
-padding:100px 150px 100px 150px;}
+display:flex;
+justify-content:center;
+align-items:center;}
 
 nav > p{font-size:2.2em;
 background-color:#5b5b5b;
@@ -28,15 +27,36 @@ text-align:center;
 border-radius:100px;
 margin:50px 0px 0px 50px;}
 
-h1{font-family:kalam;
-}
+#curs{animation-name:curs;
+animation-duration:.6s;
+animation-iteration-count:infinite;}
+
+aside{font-size:2.2em;
+margin-top:90px;
+margin-left:30px;
+color:#d9cd00;
+display:flex;}
+
+#text{width:0px;
+white-space:nowrap;
+overflow:hidden;
+animation-name:text;
+animation-duration:5s;
+animation-delay:2s;
+animation-timing-function:steps(30);
+animation-fill-mode:forwards;}
 
 article{font-size:2em;
-padding:15vh 30px 15vh 30px;
+padding:0px 30px 0px 30px;
 line-height:60px;
-max-height:96vh;}
+max-height:96vh;
+min-height:55vh;
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items:flex-start;}
 
-#art1{display: flex;
+#art1{flex-direction:row;
 align-items:center;}
 
 #art2{color:white;
@@ -71,10 +91,15 @@ a{colorblack;
 text-decoration: none;
 font-weight:bold;}
 
+
+@font-face{font-family:kalam;
+				src:url('Kalam-Regular.ttf')
+				format('truetype');}
+
+
 @media (min-width:990px), (orientation:landscape) {
-     header{max-height:76vh;
-     font-size:2.5em;
-     line-height:76vh;}
+     header{height:100vh;
+     font-size:2.5em;}
 
 				article{font-size:1em;
 				min-height:76vh;
@@ -89,4 +114,40 @@ font-weight:bold;}
 				line-height:50px;}
 				
 				#minhaft{height:80vh;}
+}
+
+
+@keyframes iniciar {
+				from {
+							transform:translatex(-200px);
+				}
+				to {
+								transform:translatex(0px);
+				}
+}
+
+
+@keyframes curs {
+				0% {
+								color:#d9cd00;
+				}
+				49% {
+								color:#d9cd00;
+				}
+				50% {
+								color:rgba(0,0,0,0)
+				}
+				100% {
+								color:rgba(0,0,0,0)
+				}
+}
+
+
+@keyframes text {
+				from {
+								width:0px;
+				}
+				to {
+								width:750px;
+				}
 }
