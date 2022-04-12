@@ -1,5 +1,5 @@
 h1, h2, p, img{animation-name:iniciar;
-animation-duration:0.3s;}
+animation-duration:1s;}
 
 main{font-family:sans-serif;
 margin:auto;}
@@ -87,19 +87,21 @@ padding:50px;}
 
 #versão{text-align:right;}
 
-a{colorblack;
-text-decoration: none;
+a{text-decoration: none;
 font-weight:bold;}
 
 
+/* fontes */
 @font-face{font-family:kalam;
 				src:url('Kalam-Regular.ttf')
 				format('truetype');}
 
-
+/* media query */
 @media (min-width:990px), (orientation:landscape) {
      header{height:100vh;
      font-size:2.5em;}
+     
+    aside{font-size:1.4em;}
 
 				article{font-size:1em;
 				min-height:76vh;
@@ -117,12 +119,42 @@ font-weight:bold;}
 }
 
 
+@media (max-width:430px) {
+				nav > p{font-size:1em;
+				height:45px;
+				width:140px;
+				line-height:40px;
+				margin:10px 0px 0px 10px;}
+				
+				aside{font-size:1.1em;
+				margin:50px 0px 0px 5px;}
+				
+				article{padding:10px;
+				margin:20px 0px 20px 0px;
+				font-size:1em;
+				line-height:35px;}
+				
+				#art1{flex-wrap:wrap;
+				margin-top:100px;}
+				
+				#minhaft{width:330px;
+				height:450px;}
+				
+				#p1{margin:0px;}
+				
+				footer{font-size:1em;
+				padding:25px;
+				margin-top:-20px;}
+}
+
+
+/* animações */
 @keyframes iniciar {
 				from {
-							transform:translatex(-200px);
+							transform:translatey(200px);
 				}
 				to {
-								transform:translatex(0px);
+								transform:translatey(0px);
 				}
 }
 
